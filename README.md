@@ -9,13 +9,13 @@ in 2nd step updating to PCIe 3.0 Standart
 
 ### Schematic
 
-![Schematic](./pcie2usbc_schem.png)
+WiP
 
 ### PCB Bottom Side
 
-![PCB Bottom Side](./pcie2usbc_btm.png)
+WiP
 
 ### PCB Top Side
 
-![PCB Top Side](./pcie2usbc_top.png)
+WiP
 
