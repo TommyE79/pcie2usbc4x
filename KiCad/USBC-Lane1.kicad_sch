@@ -762,9 +762,6 @@
   (junction (at 123.19 165.1) (diameter 0) (color 0 0 0 0)
     (uuid 8946accf-54c1-4438-a905-d5cfe04a7363)
   )
-  (junction (at 212.09 58.42) (diameter 0) (color 0 0 0 0)
-    (uuid 985a8d9a-285f-4250-9058-6ec9002a7886)
-  )
   (junction (at 252.73 58.42) (diameter 0) (color 0 0 0 0)
     (uuid b18b61a0-a3be-4057-a4d4-4719f3e5fbfd)
   )
@@ -1064,10 +1061,6 @@
     (stroke (width 0.1524) (type solid))
     (uuid ac40800e-7c1f-4297-acdc-d326416c9b6a)
   )
-  (wire (pts (xy 212.09 58.42) (xy 212.09 60.96))
-    (stroke (width 0.1524) (type solid))
-    (uuid ad46cee7-c140-46b6-a006-c3fffcb706aa)
-  )
   (wire (pts (xy 223.52 144.78) (xy 223.52 146.05))
     (stroke (width 0) (type default))
     (uuid aecfcf72-909e-4d79-af9a-8eff96a649af)
@@ -1152,10 +1145,6 @@
     (stroke (width 0.1524) (type solid))
     (uuid dcd98fcd-0207-4b59-8396-086650942184)
   )
-  (wire (pts (xy 209.55 58.42) (xy 212.09 58.42))
-    (stroke (width 0.1524) (type solid))
-    (uuid de87df34-4a2d-4850-871a-8a3b2f4a2674)
-  )
   (wire (pts (xy 262.89 58.42) (xy 252.73 58.42))
     (stroke (width 0.1524) (type solid))
     (uuid debfd611-4914-4f25-991e-dbbe0a86c6a5)
@@ -1188,7 +1177,7 @@
     (stroke (width 0.1524) (type solid))
     (uuid ea5948d1-ee8f-4471-9a22-362144f77432)
   )
-  (wire (pts (xy 212.09 58.42) (xy 212.09 55.88))
+  (wire (pts (xy 212.09 55.88) (xy 212.09 60.96))
     (stroke (width 0.1524) (type solid))
     (uuid ef0a88c5-b8e2-499a-a192-6330b0406558)
   )
@@ -1468,8 +1457,8 @@
     (property "Datasheet" "" (at 179.07 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7122aa65-b543-4170-be90-1237adfb4d09))
-    (pin "2" (uuid 7c646c1a-750b-4c85-ae06-c6dfdc68e26e))
+    (pin "1" (uuid 95a050f0-b0a3-4a88-bc48-6fce1b8f3277))
+    (pin "2" (uuid e9d1b6de-7026-44e5-b39a-4d2355ce811d))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -1488,7 +1477,7 @@
   (symbol (lib_id "power:GND") (at 90.17 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0a70dbfa-8411-4c97-bd88-599993592931)
-    (property "Reference" "#PWR07" (at 90.17 151.13 0)
+    (property "Reference" "#PWR011" (at 90.17 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 149.86 0)
@@ -1504,10 +1493,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -1528,15 +1517,15 @@
     (property "Datasheet" "" (at 189.23 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5da245bc-3e60-4bd2-810e-0751ffa3c6fb))
-    (pin "2" (uuid f22313f2-016a-4a09-9fcd-ced6295b5bf4))
+    (pin "1" (uuid 6adce140-6082-44c7-b07e-c2170c462db0))
+    (pin "2" (uuid 273fe031-6c75-4b22-ae25-60f335e2257e))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
           (reference "C8") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "C14") (unit 1)
+          (reference "C10") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
           (reference "C25") (unit 1)
@@ -1560,8 +1549,8 @@
     (property "Datasheet" "" (at 66.04 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "A" (uuid d6493798-51b6-4aed-aa9a-849b12774781))
-    (pin "C" (uuid 80f3386e-a0bc-4201-8194-a8ed38b9f8fe))
+    (pin "A" (uuid e66bbaee-b8dc-412f-b63f-235cba2fc2c7))
+    (pin "C" (uuid 49691633-dfa2-472d-b837-7d2d8ccd4078))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -1592,8 +1581,8 @@
     (property "Datasheet" "" (at 179.07 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid da2c0a0c-0546-4412-88e6-7f9de7ae801e))
-    (pin "2" (uuid 7e54f288-5648-4cc8-8896-9baec9f00d89))
+    (pin "1" (uuid b8f77616-f880-4d83-942b-56c8acc5052d))
+    (pin "2" (uuid f098018f-2e86-4bb3-8fcb-51cf71e68893))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -1624,18 +1613,18 @@
     (property "Datasheet" "" (at 93.98 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "A" (uuid 5d65346d-95f4-42a4-90e5-891623d8832c))
-    (pin "C" (uuid 5f88ad44-4422-4f2c-80b1-c46409954dd0))
+    (pin "A" (uuid 0564eee8-4365-45ae-97b1-8724782431e2))
+    (pin "C" (uuid 8941f433-b815-45be-9ba0-c9f366f618d5))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
           (reference "UNK12V0") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "UNK12V1") (unit 1)
+          (reference "+12V1") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "UNK12V2") (unit 1)
+          (reference "+12V2") (unit 1)
         )
       )
     )
@@ -1644,13 +1633,13 @@
   (symbol (lib_id "Connector:TestPoint") (at 154.94 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1f3a37d6-68f1-441a-89d2-3c12867713d6)
-    (property "Reference" "TP34" (at 157.48 109.728 0)
+    (property "Reference" "TP16" (at 157.48 109.728 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 157.48 112.268 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 160.02 114.3 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm" (at 160.02 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 160.02 114.3 0)
@@ -1660,10 +1649,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "TP34") (unit 1)
+          (reference "TP16") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "TP33") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -1684,8 +1673,8 @@
     (property "Datasheet" "" (at 189.23 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 29a8c70f-4cda-42af-8e03-5563521cadcb))
-    (pin "2" (uuid 1b58b4ba-f65f-493e-9648-9cebd4b2162e))
+    (pin "1" (uuid 8e6feb17-e827-4e5d-bf9c-707610aa4585))
+    (pin "2" (uuid 9a283a61-e053-415d-b57c-f6fae42f77ad))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -1704,13 +1693,13 @@
   (symbol (lib_id "Connector:TestPoint") (at 140.97 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3072694e-9d90-44d0-8beb-797c34795025)
-    (property "Reference" "TP32" (at 143.51 109.728 0)
+    (property "Reference" "TP15" (at 143.51 109.728 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 143.51 112.268 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 146.05 114.3 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm" (at 146.05 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 146.05 114.3 0)
@@ -1720,44 +1709,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "TP32") (unit 1)
+          (reference "TP15") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "TP31") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "pcie2usbc-eagle-import:TPTP38X20") (at 209.55 58.42 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3311aaad-e051-4ee9-9f62-152a9794b7af)
-    (property "Reference" "TP10" (at 205.74 58.42 0)
-      (effects (font (size 1.524 1.2954)) (justify right) hide)
-    )
-    (property "Value" "TPTP38X20" (at 209.55 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "pcie2usbc:TP38X20" (at 209.55 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 209.55 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "TP_SIGNAL_NAME" "GND" (at 205.74 58.42 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-    (pin "TP" (uuid ff02f22a-54e7-4d7a-909e-291cd8fe013a))
-    (instances
-      (project "pcie2usbc"
-        (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
           (reference "TP10") (unit 1)
-        )
-        (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "TP13") (unit 1)
-        )
-        (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "TP30") (unit 1)
         )
       )
     )
@@ -1766,7 +1721,7 @@
   (symbol (lib_id "power:+12V") (at 93.98 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3362ddad-72b8-4331-bb8d-bdb7d95be5b9)
-    (property "Reference" "#PWR030" (at 93.98 35.56 0)
+    (property "Reference" "#PWR012" (at 93.98 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 93.98 26.67 0)
@@ -1782,10 +1737,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -1800,7 +1755,7 @@
     (property "Value" "0" (at 115.57 148.59 90)
       (effects (font (size 1.524 1.2954)) (justify left))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 113.03 149.86 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 113.03 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 113.03 149.86 0)
@@ -1814,10 +1769,10 @@
           (reference "R5") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R3") (unit 1)
+          (reference "R7") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R18") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -1826,7 +1781,7 @@
   (symbol (lib_id "power:+3V3") (at 262.89 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4b5c466d-b723-4794-8c27-00062ebd262d)
-    (property "Reference" "#PWR022" (at 262.89 48.26 0)
+    (property "Reference" "#PWR020" (at 262.89 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 262.89 39.37 0)
@@ -1842,10 +1797,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -1860,7 +1815,7 @@
     (property "Value" "0" (at 115.57 130.81 90)
       (effects (font (size 1.524 1.2954)) (justify left))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 113.03 132.08 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 113.03 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 113.03 132.08 0)
@@ -1874,10 +1829,10 @@
           (reference "R10") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R1") (unit 1)
+          (reference "R6") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R17") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -1892,7 +1847,7 @@
     (property "Value" "0" (at 115.57 151.13 90)
       (effects (font (size 1.524 1.2954)) (justify left))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 113.03 152.4 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 113.03 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 113.03 152.4 0)
@@ -1906,10 +1861,10 @@
           (reference "R6") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R4") (unit 1)
+          (reference "R8") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R19") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -1937,10 +1892,10 @@
           (reference "#PWR06") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -1949,7 +1904,7 @@
   (symbol (lib_id "power:+3V3") (at 104.14 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 58729235-0882-4535-9c55-653dd090f988)
-    (property "Reference" "#PWR024" (at 104.14 35.56 0)
+    (property "Reference" "#PWR014" (at 104.14 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 104.14 26.67 0)
@@ -1965,7 +1920,7 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
           (reference "#PWR025") (unit 1)
@@ -2027,7 +1982,7 @@
     (property "Value" "2.2k" (at 101.6 53.34 0)
       (effects (font (size 1.524 1.2954)) (justify right))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 104.14 52.07 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 104.14 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 104.14 52.07 0)
@@ -2041,10 +1996,10 @@
           (reference "R7") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R8") (unit 1)
+          (reference "R5") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R15") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -2059,7 +2014,7 @@
     (property "Value" "100k" (at 115.57 171.45 0)
       (effects (font (size 1.524 1.2954)) (justify left))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 113.03 170.18 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 113.03 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 113.03 170.18 0)
@@ -2085,10 +2040,10 @@
           (reference "R1") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R9") (unit 1)
+          (reference "R11") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R22") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -2129,7 +2084,7 @@
           (reference "C11") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "C11") (unit 1)
+          (reference "C13") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
           (reference "C28") (unit 1)
@@ -2141,7 +2096,7 @@
   (symbol (lib_id "power:GND") (at 113.03 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8c1e9224-679a-409d-baf1-7326b4b9ba6d)
-    (property "Reference" "#PWR08" (at 113.03 184.15 0)
+    (property "Reference" "#PWR015" (at 113.03 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 113.03 182.88 0)
@@ -2157,10 +2112,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -2201,7 +2156,7 @@
           (reference "C12") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "C12") (unit 1)
+          (reference "C14") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
           (reference "C29") (unit 1)
@@ -2219,7 +2174,7 @@
     (property "Value" "TPTP38X20" (at 209.55 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "pcie2usbc:TP38X20" (at 209.55 55.88 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 209.55 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 209.55 55.88 0)
@@ -2235,10 +2190,10 @@
           (reference "TP13") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "TP10") (unit 1)
+          (reference "TP14") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "TP29") (unit 1)
+          (reference "TP19") (unit 1)
         )
       )
     )
@@ -2253,50 +2208,50 @@
     (property "Value" "USB-C-MLX" (at 133.35 168.91 0)
       (effects (font (size 1.524 1.2954)) (justify left))
     )
-    (property "Footprint" "pcie2usbc:MOLEX_105450-0101" (at 146.05 147.32 0)
+    (property "Footprint" "Connector_USB:USB_C_Receptacle_CNCTech_C-ARA1-AK51X" (at 146.05 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 146.05 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "A1" (uuid a5241cb6-6179-4a0e-b1fa-7cd6506cecd0))
-    (pin "A10" (uuid e6a929ab-dd19-4c03-869b-0731974fb806))
-    (pin "A11" (uuid f23145b6-0bfd-4315-8b26-eefcb1195e64))
-    (pin "A12" (uuid 2f59673a-8364-43f1-82d2-d07f2eaca4d9))
-    (pin "A2" (uuid dd5584e9-59ae-4118-a814-562dc4314c64))
-    (pin "A3" (uuid 968e1daf-0e67-4899-bb2b-57da4d271fcf))
-    (pin "A4" (uuid 3988ba46-b050-4133-95ca-56d5d7fa8add))
-    (pin "A5" (uuid e77c82a0-ff8a-4ab4-bebf-bc96ab718d7f))
-    (pin "A6" (uuid 26c1efa9-60dd-43d7-9585-a2c53bf017d7))
-    (pin "A7" (uuid a69f763f-3079-48ce-8cda-0dd22bc1ec75))
-    (pin "A8" (uuid 2f1608c0-8cb3-46db-8fb5-abb7cdcc71b5))
-    (pin "A9" (uuid ac7f8592-d397-4e6d-bae9-ec9ab005b408))
-    (pin "B1" (uuid e631887c-d8ef-40b7-b9f6-e5b96d58a49f))
-    (pin "B10" (uuid 2846caee-2744-426b-8eab-fef8da570530))
-    (pin "B11" (uuid 413c47d0-bfef-4d57-88a0-46845db30a02))
-    (pin "B12" (uuid 18274409-8ff9-4535-8195-280d3534e1b3))
-    (pin "B2" (uuid 65e9eaba-a556-40e6-b7da-3701b8d3f4a4))
-    (pin "B3" (uuid a126336a-fd7d-47d0-81b5-7d83a19f4050))
-    (pin "B4" (uuid 3659bd07-8752-43ca-b19c-193bc963e9ed))
-    (pin "B5" (uuid 4500e667-0177-4b3c-a315-011a2c80d7d8))
-    (pin "B6" (uuid 6cfc9396-e624-47f5-b3f8-adbe73930148))
-    (pin "B7" (uuid 8fc95970-d005-45dc-98bf-ef8a55a7e200))
-    (pin "B8" (uuid 4b197cd4-14b3-4460-bf58-98a9f31124b2))
-    (pin "B9" (uuid aaf918cf-6839-44d6-9fd5-7528239ab9f4))
-    (pin "S1" (uuid d9a582ec-5159-441c-8356-5c6ba55ba16d))
-    (pin "S2" (uuid 7c94a789-6909-4adb-b9e9-d7c8d36a77a8))
-    (pin "S3" (uuid 8a277645-3b96-48f2-b4c9-cc0cbaca5b4c))
-    (pin "S4" (uuid d5b06122-f6b6-4899-8a61-f1f676912910))
+    (pin "A1" (uuid f8d3078b-8e0e-4c4f-8b7e-10969911745e))
+    (pin "A10" (uuid 97917c03-c7df-4956-a8a9-01020ee85dce))
+    (pin "A11" (uuid 787d416e-7541-454f-b71a-1ef206c41a8f))
+    (pin "A12" (uuid 8275dc7c-1235-4672-9f6a-af9dcd7aeaf1))
+    (pin "A2" (uuid 096ca8d7-20b2-4913-a58a-976c5748a440))
+    (pin "A3" (uuid 39dda8a5-1dac-46bd-8a4d-3919aa322dc8))
+    (pin "A4" (uuid 660af353-5446-45a1-b184-69bc6e5305a9))
+    (pin "A5" (uuid 8a23c736-7847-4e7d-8351-1470a7a631fc))
+    (pin "A6" (uuid 430f1f83-1416-4703-b5fb-b184ffae1ad6))
+    (pin "A7" (uuid fb810da5-a9c4-41f6-9e5e-9d08ea97fd90))
+    (pin "A8" (uuid 28e95bd8-6826-4233-80bd-9576cc200eae))
+    (pin "A9" (uuid d2f33206-c2e9-45d1-a3f3-d1430314d140))
+    (pin "B1" (uuid dfb3b6ba-0d34-4145-a3fe-9564b24056b3))
+    (pin "B10" (uuid 6d213d54-d18a-40ba-963a-d1b06387482e))
+    (pin "B11" (uuid c85ec0f4-bb05-4d5d-8e63-86df4be2d0df))
+    (pin "B12" (uuid 788654a4-0526-4af2-bd0f-c6da8207b679))
+    (pin "B2" (uuid 9a86a9fa-1693-416c-aa04-7923952b5304))
+    (pin "B3" (uuid 9293961f-5b74-4aba-a4a6-333b5a5fff60))
+    (pin "B4" (uuid c6b991f9-54b6-47c1-83a2-26ea894bfb1b))
+    (pin "B5" (uuid 24521885-c3f4-43cd-9b53-331f743cfdf7))
+    (pin "B6" (uuid 2c0046bc-3d7c-4a95-8f76-91b71d6a93fc))
+    (pin "B7" (uuid 5d57bfa3-5ae5-4caf-9cdd-428ea739b12c))
+    (pin "B8" (uuid 13a6967a-40df-4afc-bdb7-8562a927060c))
+    (pin "B9" (uuid 61e25232-a683-4aa9-b6d8-8febe6cce874))
+    (pin "S1" (uuid 2de93007-e3c0-4c7c-aa7e-cd1d71440054))
+    (pin "S2" (uuid 085f873e-cb3b-4dce-9efc-7a05ef578608))
+    (pin "S3" (uuid 5a02eb14-44e6-4082-aed7-027c04613577))
+    (pin "S4" (uuid 58ec3578-a5d7-4e9b-bbdb-c659037e871f))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
           (reference "J2") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "J2") (unit 1)
+          (reference "J3") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "J5") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -2324,10 +2279,10 @@
           (reference "#PWR03") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -2368,7 +2323,7 @@
           (reference "C13") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "C13") (unit 1)
+          (reference "C15") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
           (reference "C30") (unit 1)
@@ -2399,10 +2354,10 @@
           (reference "#PWR05") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -2431,10 +2386,10 @@
           (reference "UNK3V3") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "UNK3V1") (unit 1)
+          (reference "+3V1") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "UNK3V2") (unit 1)
+          (reference "+3V2") (unit 1)
         )
       )
     )
@@ -2443,7 +2398,7 @@
   (symbol (lib_id "power:+3V3") (at 66.04 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b3aa73f2-d01a-46cb-8ed8-8f8bc77a8c1f)
-    (property "Reference" "#PWR026" (at 66.04 35.56 0)
+    (property "Reference" "#PWR010" (at 66.04 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 66.04 26.67 0)
@@ -2459,10 +2414,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -2477,7 +2432,7 @@
     (property "Value" "10k" (at 91.44 53.34 0)
       (effects (font (size 1.524 1.2954)) (justify right))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 93.98 52.07 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 93.98 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 93.98 52.07 0)
@@ -2491,10 +2446,10 @@
           (reference "R8") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R7") (unit 1)
+          (reference "R4") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R14") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -2503,13 +2458,13 @@
   (symbol (lib_id "Connector:TestPoint") (at 185.42 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b71b5ceb-2405-4e97-8694-cb500e9d9492)
-    (property "Reference" "TP38" (at 187.96 109.728 0)
+    (property "Reference" "TP18" (at 187.96 109.728 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 187.96 112.268 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 190.5 114.3 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm" (at 190.5 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 190.5 114.3 0)
@@ -2519,10 +2474,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "TP38") (unit 1)
+          (reference "TP18") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "TP37") (unit 1)
+          (reference "TP13") (unit 1)
         )
       )
     )
@@ -2531,7 +2486,7 @@
   (symbol (lib_id "power:+12V") (at 229.87 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b88479fa-83ae-4d73-a722-bc8f2bcb09b4)
-    (property "Reference" "#PWR028" (at 229.87 48.26 0)
+    (property "Reference" "#PWR017" (at 229.87 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 229.87 39.37 0)
@@ -2547,10 +2502,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -2571,15 +2526,15 @@
     (property "Datasheet" "" (at 189.23 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bf68b311-1805-4bd8-b0f8-a19526ded541))
-    (pin "2" (uuid 908b6c08-0f43-48ca-939e-c36165cef244))
+    (pin "1" (uuid 49d8a613-d1fe-4c08-bade-7f292e145051))
+    (pin "2" (uuid 1b081e58-2102-49c7-9699-5a6b34fe1bc2))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
           (reference "C17") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "C15") (unit 1)
+          (reference "C11") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
           (reference "C26") (unit 1)
@@ -2603,8 +2558,8 @@
     (property "Datasheet" "" (at 179.07 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7c7f82dd-4e17-46ab-9780-a2b65f54e456))
-    (pin "2" (uuid 6c6b7147-0741-4470-ad6b-0560bf49da2c))
+    (pin "1" (uuid ac9826fb-c94e-43dd-8e98-9d147ce27893))
+    (pin "2" (uuid 0dc33b19-abd9-444b-9027-4c2214485e24))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -2623,13 +2578,13 @@
   (symbol (lib_id "Connector:TestPoint") (at 170.18 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1338bcb-454c-4ffa-b612-6866160024f5)
-    (property "Reference" "TP36" (at 172.72 109.728 0)
+    (property "Reference" "TP17" (at 172.72 109.728 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 172.72 112.268 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 175.26 114.3 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm" (at 175.26 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 175.26 114.3 0)
@@ -2639,10 +2594,10 @@
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "TP36") (unit 1)
+          (reference "TP17") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "TP35") (unit 1)
+          (reference "TP12") (unit 1)
         )
       )
     )
@@ -2663,8 +2618,8 @@
     (property "Datasheet" "" (at 179.07 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2dff8b8a-bd22-457b-8661-dd291de4ab9e))
-    (pin "2" (uuid b92bc8c2-088b-4212-b841-d973582c64a8))
+    (pin "1" (uuid 3ee78e2c-873c-4bfc-95e2-d338fcf8f726))
+    (pin "2" (uuid a5e9feaa-2a06-4ca1-a438-b91bdf7da644))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -2715,7 +2670,7 @@
           (reference "C10") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "C10") (unit 1)
+          (reference "C12") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
           (reference "C27") (unit 1)
@@ -2739,8 +2694,8 @@
     (property "Datasheet" "" (at 189.23 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce4af9e2-dee2-4ecb-b2ae-247079274217))
-    (pin "2" (uuid 106c3e64-08b8-45e2-a0cd-8c279c317bb3))
+    (pin "1" (uuid c78b3c56-8c8e-4004-b569-c7c40e68f784))
+    (pin "2" (uuid 335d60f9-88a3-4eb1-90ac-cbd4b6ee40f4))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -2765,7 +2720,7 @@
     (property "Value" "0" (at 115.57 158.75 90)
       (effects (font (size 1.524 1.2954)) (justify right))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 113.03 160.02 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 113.03 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 113.03 160.02 0)
@@ -2779,10 +2734,10 @@
           (reference "R4") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R6") (unit 1)
+          (reference "R10") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R21") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -2797,7 +2752,7 @@
     (property "Value" "0" (at 115.57 156.21 90)
       (effects (font (size 1.524 1.2954)) (justify left))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 113.03 157.48 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 113.03 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 113.03 157.48 0)
@@ -2811,10 +2766,10 @@
           (reference "R3") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R5") (unit 1)
+          (reference "R9") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R20") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -2835,8 +2790,8 @@
     (property "Datasheet" "" (at 179.07 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 13b252f5-b8c3-451e-a1b6-bc54feb54bc4))
-    (pin "2" (uuid de4f2da3-f910-4570-be5f-5535e028b412))
+    (pin "1" (uuid 7f29f963-6a20-4022-969a-6c7d321be53e))
+    (pin "2" (uuid e440bb31-d860-4e28-b9df-5b42cf741ea5))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -2874,10 +2829,10 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -2898,8 +2853,8 @@
     (property "Datasheet" "" (at 189.23 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 476f9ccc-3d3d-4444-996c-b88cdd1d0960))
-    (pin "2" (uuid 0a525b60-5460-4594-b1f0-086fce2cf7df))
+    (pin "1" (uuid 279206ba-176c-44fa-92bb-4da494405100))
+    (pin "2" (uuid 66d439e3-fe32-4bf1-843f-144dc6f5411a))
     (instances
       (project "pcie2usbc"
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48"
@@ -2924,7 +2879,7 @@
     (property "Value" "2.2k" (at 63.5 53.34 0)
       (effects (font (size 1.524 1.2954)) (justify right))
     )
-    (property "Footprint" "pcie2usbc:R0603" (at 66.04 52.07 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (at 66.04 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 66.04 52.07 0)
@@ -2938,10 +2893,10 @@
           (reference "R2") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/0780fae0-cf9e-47a3-8386-0708b158015b"
-          (reference "R2") (unit 1)
+          (reference "R3") (unit 1)
         )
         (path "/e1766754-b9de-4cd8-9e76-5cd3a12f2f48/265201af-3e4e-4a3b-a1e2-272c609923eb"
-          (reference "R13") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
