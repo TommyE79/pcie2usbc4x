@@ -9,7 +9,9 @@ Tested up to PCIe Gen 2 at 5.0 Gbps (though threre's plenty of room for improvin
 
 ### Schematic
 
-#### ![Schematic](./pcie2usbc.pdf)
+#### ![Schematic page 1](schematic_P01.png)
+#### ![Schematic page 2](schematic_P02.png)
+#### ![Schematic page 3](schematic_P03.png)
 
 ### PCB Bottom Side
 
