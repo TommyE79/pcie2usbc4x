@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -57,7 +57,6 @@
       ],
       "drc_exclusions": [],
       "meta": {
-        "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
@@ -112,10 +111,10 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.25,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 1.0,
-        "min_hole_clearance": 0.35,
+        "min_copper_edge_clearance": 0.7,
+        "min_hole_clearance": 0.15,
         "min_hole_to_hole": 0.35,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
@@ -174,14 +173,30 @@
         0.0,
         0.15,
         0.2,
-        0.25,
-        0.3,
-        0.38
+        0.4064,
+        0.508,
+        0.635,
+        0.762,
+        1.016,
+        1.651,
+        2.286
       ],
       "via_dimensions": [
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.65,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.781,
+          "drill": 0.381
         }
       ],
       "zones_allow_external_fillets": true
@@ -394,7 +409,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -404,6 +419,7 @@
       "wire_dangling": "error"
     }
   },
+  "legacy": [],
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": []
@@ -421,20 +437,20 @@
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.508,
+        "microvia_drill": 0.127,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
+        "track_width": 0.2032,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
         "clearance": 0.1524,
-        "diff_pair_gap": 0.57,
+        "diff_pair_gap": 0.52,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.33,
         "line_style": 0,
@@ -443,17 +459,17 @@
         "name": "DIFF100",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.33,
-        "via_diameter": 0.5048,
-        "via_drill": 0.2,
+        "track_width": 0.2,
+        "via_diameter": 0.7,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
         "clearance": 0.1524,
-        "diff_pair_gap": 0.1,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.41,
+        "diff_pair_width": 0.368,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -461,16 +477,16 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
         "clearance": 0.1524,
-        "diff_pair_gap": 0.38,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.38,
+        "diff_pair_width": 0.39,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -478,25 +494,25 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.1524,
+        "clearance": 0.2032,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.508,
+        "microvia_drill": 0.127,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.35,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.762,
+        "via_diameter": 0.782,
+        "via_drill": 0.381,
         "wire_width": 6
       }
     ],
@@ -535,19 +551,27 @@
     "netclass_patterns": [
       {
         "netclass": "DIFF90",
-        "pattern": "/*/*TX*"
+        "pattern": "/*/TX*"
       },
       {
         "netclass": "DIFF90",
-        "pattern": "/*/*CC*"
+        "pattern": "/*/RX*"
+      },
+      {
+        "netclass": "DIFF85",
+        "pattern": "/PET*"
       },
       {
         "netclass": "DIFF85",
         "pattern": "/REFCLK*"
       },
       {
+        "netclass": "DIFF85",
+        "pattern": "/PER*"
+      },
+      {
         "netclass": "DIFF90",
-        "pattern": "/*/*D*"
+        "pattern": "/*D_*"
       },
       {
         "netclass": "Power",
@@ -560,18 +584,6 @@
       {
         "netclass": "Power",
         "pattern": "+3V3"
-      },
-      {
-        "netclass": "DIFF85",
-        "pattern": "/PER*"
-      },
-      {
-        "netclass": "DIFF85",
-        "pattern": "/PET*"
-      },
-      {
-        "netclass": "DIFF90",
-        "pattern": "/*/*RX*"
       }
     ]
   },
@@ -600,9 +612,9 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
-      "label_size_ratio": 0.375,
-      "pin_symbol_size": 25.0,
-      "text_offset_ratio": 0.15
+      "label_size_ratio": 0.25,
+      "pin_symbol_size": 0.0,
+      "text_offset_ratio": 0.08
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
@@ -610,8 +622,8 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "empty.kicad_wks",
-    "plot_directory": "../",
+    "page_layout_descr_file": "",
+    "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
